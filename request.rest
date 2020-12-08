@@ -1,0 +1,25 @@
+POST http://localhost:3000/api/user/register
+Content-Type: application/json
+
+{
+    "name":"Ali Butt",
+    "email":"alibutt@gmail.com",
+    "password":"11979944"
+}
+
+###
+POST http://localhost:3000/api/user/login
+Content-Type: application/json
+
+{
+    "email":"alibutt@gmail.com",
+    "password":"11979944"
+}
+
+### 
+GET http://localhost:3000/api/posts
+auth-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI1ZTkzNTY5MDkyZmMxOTI0ZjhiMDVjOGUiLCJpYXQiOjE1ODY3MTc5NTJ9.DNH1-hObFW2dqg1hj8x2GanNYk_j1BmpQM4PCxgSpAc
+
+
+###
+POST http://localhost:3000/api/user/upload
